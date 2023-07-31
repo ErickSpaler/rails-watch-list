@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>My Lists</h1>
+  <% if @lists.empty? %>
+    <p>"You don't have any list yes 😢"</p>
+  <% else %>
+    <ul>
+      <% @lists.each do |list| %>
+        <li><%= list.name %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
