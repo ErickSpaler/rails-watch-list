@@ -1,2 +1,19 @@
-<h1>Lists#show</h1>
-<p>Find me in app/views/lists/show.html.erb</p>
+<div class="container">
+  <h1><%= @list.name %></h1>
+
+  <% if @list.movies.empty? %>
+    <p>You haven't saved any movies yet! 🎬</p>
+  <% else %>
+    <% @list.movies.each do |movie| %>
+      <%= movie.name %>
+    <% end %>
+  <% end %>
+
+
+
+
+
+
+
+
+</div>
