@@ -1,5 +1,7 @@
 <div class="container">
   <h1><%= @list.name %></h1>
+  <%= link_to "delete this list", list_path(@list), class: 'btn btn-danger', data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this list?"} %>
+  <%= link_to 'Back', root_path, class: 'btn btn-secondary' %>
 
   <% if @list.movies.empty? %>
     <p>You haven't saved any movies yet! 🎬</p>
@@ -8,12 +10,5 @@
       <%= movie.name %>
     <% end %>
   <% end %>
-
-
-
-
-
-
-
 
 </div>
