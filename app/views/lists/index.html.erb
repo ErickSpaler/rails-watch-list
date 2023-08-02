@@ -1,11 +1,12 @@
 <div class="container">
   <h1>My Lists</h1>
+  <%= link_to 'Create a new list', new_list_path, class: 'btn btn-primary' %>
   <% if @lists.empty? %>
     <p>"You don't have any list yes 😢"</p>
   <% else %>
     <ul>
       <% @lists.each do |list| %>
-        <li><%= list.name %></li>
+        <li><%= link_to list.name, list_path(list) %></li>
       <% end %>
     </ul>
   <% end %>
