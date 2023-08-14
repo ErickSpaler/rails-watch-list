@@ -1,0 +1,28 @@
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+
+// .card-img {
+// width: 300px;
+// margin: 0 auto;
+// }
+
+.card {
+  width: 300px; /* Defina o tamanho fixo desejado para os cards */
+  margin-right: 10px; /* Adicione um espaço entre os cards */
+}
+
+.card .card-body {
+  height: 200px; /* Defina a altura fixa para o corpo do card */
+  overflow: hidden; /* Oculte qualquer conteúdo extra que exceda a altura */
+}
